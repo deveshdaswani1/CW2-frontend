@@ -1,0 +1,346 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #e0e0e0; /* Light grey background */
+    color: #343a40; /* Dark grey text color */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background: #343a40; /* Dark grey background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #fd7e14 3px solid; /* Orange border */
+    color: #ffffff; /* White text color */
+    font-family: 'Arial', sans-serif; /* Change font */
+    padding: 10px 20px; /* Increased padding */
+    font-size: 1.2em; /* Larger font size */
+}
+
+.root {
+    display: flex;
+}
+
+main {
+    border-bottom: #fd7e14 3px solid; /* Orange border */
+    width: 80%;
+    padding: 20px; /* Add padding */
+}
+
+.title-bar {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em; /* Larger font size */
+    background-color: #343a40; /* Dark grey background */
+    color: #ffffff; /* White text color */
+    padding: 10px; /* Add padding */
+    border-radius: 5px; /* Rounded corners */
+}
+
+aside {
+    width: 20%;
+    padding: 20px 10px; /* Increased padding */
+    background-color: #adb5bd; /* Light grey background */
+    border-radius: 5px; /* Rounded corners */
+}
+
+aside ul {
+    padding: 0;
+    margin: 0;
+    list-style: none; /* Remove bullets */
+}
+
+aside ul li button {
+    display: block;
+    width: 100%;
+    padding: 10px; /* Increased padding */
+    margin: 5px 0; /* Add margin */
+    background-color: #ffffff; /* White background */
+    border: 1px solid #ccc; /* Light grey border */
+    display: flex;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    color: #343a40; /* Dark grey text color */
+    font-size: 1em; /* Font size */
+}
+
+aside ul li button:hover {
+    background-color: #6c757d; /* Grey background */
+    color: #ffffff; /* White text color */
+}
+
+.lessons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lessons__item {
+    width: 220px;
+    background-color: #6c757d; /* Grey background */
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    color: #ffffff; /* White text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+.lessons__item figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lessons__item figure img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Circular images */
+}
+
+.cart {
+    display: flex;
+    flex-direction: row;
+}
+
+.cart__item {
+    display: flex;
+    align-items: center;
+    background-color: #17a2b8; /* Cyan background */
+    margin: 5px 0;
+    padding: 10px; /* Add padding */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.cart__item div {
+    padding: 10px; /* Increased padding */
+    width: 100%;
+}
+
+.cart__item img {
+    width: 40px;
+    height: 40px;
+}
+
+.cart__item button {
+    background-color: #343a40; /* Dark grey background */
+    color: #ffffff; /* White text color */
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+.cart__item button:hover {
+    background-color: #fd7e14; /* Orange background */
+}
+
+form {
+    background-color: #ffffff; /* White background */
+    padding: 20px; /* Increased padding */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+    display: flex;
+    margin: 20px 0;
+    flex-direction: column;
+}
+
+form input {
+    display: block;
+    width: 100%;
+    padding: 10px; /* Increased padding */
+    margin-bottom: 10px; /* Add margin */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+form input[type="submit"] {
+    text-align: center;
+    margin: 10px 0;
+    background-color: #343a40; /* Dark grey background */
+    color: #ffffff; /* White text color */
+    border: none;
+    padding: 10px; /* Increased padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+}
+
+form div {
+    padding: 10px 0;
+}
+
+button {
+    background-color: #6c757d; /* Grey background */
+    color: #ffffff; /* White text color */
+    border-radius: 20px;
+    padding: 10px 20px; /* Increased padding */
+    border: none;
+    cursor: pointer;
+}
+
+button:active {
+    color: #ffffff; /* White text color */
+    background-color: #fd7e14; /* Orange background */
+}
+
+.sort-options {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff; /* White background */
+    padding: 15px; /* Add padding */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+.sort-options label {
+    margin-bottom: 10px;
+    color: #343a40; /* Dark grey text color */
+    font-weight: bold; /* Bold labels */
+}
+
+.sort-options input[type="radio"] {
+    margin-right: 5px;
+}
+
+.search-wrapper {
+    position: relative;
+}
+
+.search-wrapper input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.search-wrapper label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #666;
+}
+
+.search-wrapper input[type="text"]:focus + label {
+    display: none;
+}
+
+.title-bar h1 {
+    margin: 0;
+    font-size: 2em; /* Larger font size */
+    color: #ffffff; /* White text color */
+}
+
+#sortby {
+    padding: 5px 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1; /* Light grey background */
+    color: #333; /* Dark text color */
+}
+
+.nav-item {
+    position: absolute;
+    top: 20px; /* Adjust top position as needed */
+    right: 20px; /* Adjust right position as needed */
+}
+
+.cart {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.cart__header {
+    font-weight: bold;
+}
+
+.cart__item > div {
+    flex: 1;
+    text-align: center;
+}
+
+.cart__item img {
+    max-width: 100px;
+    height: auto;
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Bootstrap danger color */
+    color: #fff;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #c82333; /* Bootstrap danger hover color */
+}
+
+#subjects .card {
+    background-color: #ffffff; /* White background */
+    border: none; /* Remove border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Box shadow */
+    border-radius: 5px; /* Rounded corners */
+}
+
+#subjects .list-group-item {
+    background-color: transparent; /* Transparent background */
+    border: none; /* Remove border */
+}
+
+#subjects .cart-image {
+    width: 100%; /* Full width */
+    border-radius: 5px; /* Rounded corners */
+}
+
+#subjects .info_container {
+    padding-left: 20px; /* Padding */
+}
+
+#subjects .card-text {
+    margin-bottom: 5px; /* Margin */
+}
+
+#subjects .item-price {
+    margin-bottom: 10px; /* Margin */
+    font-size: 18px; /* Font size */
+}
+
+#subjects .btn-dark {
+    margin-top: 10px; /* Margin */
+    width: 100%; /* Full width */
+    background-color: #343a40; /* Dark grey background */
+    color: #ffffff; /* White text color */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding */
+}
+
+.lessons__item button {
+    width: 100%;
+    background-color: #17a2b8; /* Cyan background */
+    color: #ffffff; /* White text color */
+    border: none;
+    padding: 10px; /* Increased padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+}
+
+.lessons__item button:hover {
+    background-color: #138496; /* Darker cyan background */
+}
